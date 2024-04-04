@@ -30,5 +30,9 @@ public class Aluno {
     @Column(name="nr_cpf",nullable = false)
     private Long cpf;
 
-
+    public Aluno(Long rm, String nome, Long cpf) {
+        this.rm = rm;
+        this.nome = nome;
+        this.cpf = cpf;
+    }
 }
