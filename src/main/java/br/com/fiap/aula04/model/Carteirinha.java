@@ -33,9 +33,9 @@ public class Carteirinha {
     private LocalDate dataVencimento;
 
     @Column(name="st_ativo", nullable = false)
-    private String status;
+    private boolean status;
 
-    public Carteirinha(Long cd, LocalDate dataEmissao, LocalDate dataVencimento, String status) {
+    public Carteirinha(Long cd, LocalDate dataEmissao, LocalDate dataVencimento, boolean status) {
         this.cd = cd;
         this.dataEmissao = dataEmissao;
         this.dataVencimento = dataVencimento;

@@ -35,4 +35,7 @@ public class Aluno {
         this.nome = nome;
         this.cpf = cpf;
     }
+
+    public Aluno(CadastroAlunoDto alunoDto) {
+    }
 }
