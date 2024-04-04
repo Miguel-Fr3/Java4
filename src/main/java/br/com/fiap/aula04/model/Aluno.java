@@ -27,13 +27,13 @@ public class Aluno {
     @Column(name="nm_aluno", length = 100, nullable = false)
     private String nome;
 
-    @Column(name="nr_cpf",nullable = false)
-    private Long cpf;
+    @Column(name="cd_turma",nullable = false)
+    private Long cd;
 
-    public Aluno(Long rm, String nome, Long cpf) {
+    public Aluno(Long rm, String nome, Long cd) {
         this.rm = rm;
         this.nome = nome;
-        this.cpf = cpf;
+        this.cd = cd;
     }
 
     public Aluno(CadastroAlunoDto alunoDto) {
