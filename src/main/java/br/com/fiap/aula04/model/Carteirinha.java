@@ -28,6 +28,7 @@ public class Carteirinha {
     @Column(name="dt_emissao", nullable = false)
     private LocalDate dataEmissao;
 
+
     @CreatedDate
     @Column(name="dt_vencimento", nullable = false)
     private LocalDate dataVencimento;
